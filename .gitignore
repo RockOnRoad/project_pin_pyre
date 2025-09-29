@@ -19,7 +19,10 @@ lib/
 lib64/
 parts/
 sdist/
+<<<<<<< HEAD
 settings.py
+=======
+>>>>>>> 0ff5b33 (0.1.0)
 var/
 wheels/
 *.egg-info/

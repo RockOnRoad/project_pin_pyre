@@ -1,6 +1,7 @@
 [project]
 name = "pin-pyre"
 version = "0.1.0"
+<<<<<<< HEAD
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -12,10 +13,35 @@ dependencies = [
     "sqlalchemy[asyncio]>=2.0.43",
     "uvicorn>=0.37.0",
     "alembic (>=1.16.5,<2.0.0)",
+=======
+description = ""
+authors = [
+    {name = "RockOnRoad",email = "iHushHost@gmail.com"}
+]
+packages = []
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.118.0,<0.119.0)",
+    "uvicorn[standard] (>=0.37.0,<0.38.0)"
+>>>>>>> 0ff5b33 (0.1.0)
 ]
 
 [dependency-groups]
 dev = [
+<<<<<<< HEAD
     "black>=25.9.0",
     "pytest>=8.4.2",
 ]
+=======
+    "pytest (>=8.4.2,<9.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+>>>>>>> 0ff5b33 (0.1.0)
