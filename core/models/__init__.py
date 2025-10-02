@@ -4,9 +4,11 @@ __all__ = (
     "db_util",
     "Product",
     "User",
+    "Post",
 )
 
 from .base import Base
 from .db_util import DatabaseUtility, db_util
 from .product import Product
 from .user import User
+from .post import Post
