@@ -5,13 +5,10 @@ import uvicorn
 from api_1 import router as rtr_1
 
 from core.config import settings
-from core.models import Base, db_util
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    async with db_util.engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
     yield
 
 
